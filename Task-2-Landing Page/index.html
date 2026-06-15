@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes Portal</title>
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER SECTION -->
+    <!-- Contains the brand name (logo) and main navigation links -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Website Logo / Title -->
+            <a href="#" class="logo">NotesPortal</a>
+            
+            <!-- Navigation Links -->
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <!-- The main banner of the page to catch the user's attention -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <h1>Welcome to Student Notes Portal</h1>
+            <p>Your one-stop destination for study materials, past papers, and quality student notes to help you ace your exams.</p>
+            <a href="#features" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- 3. FEATURES SECTION -->
+    <!-- Shows the 3 main features of the notes portal -->
+    <section id="features" class="features">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title">What We Offer</h2>
+            
+            <!-- Grid container for the 3 feature boxes -->
+            <div class="features-grid">
+                <!-- Feature 1: Notes Access -->
+                <div class="feature-box">
+                    <h3>Notes Access</h3>
+                    <p>Find organized, high-quality, topic-wise lecture notes uploaded by top-performing students and lecturers.</p>
+                </div>
+
+                <!-- Feature 2: Previous Year Papers -->
+                <div class="feature-box">
+                    <h3>Previous Year Papers</h3>
+                    <p>Access an archive of exam question papers from previous years with solved solutions for your reference.</p>
+                </div>
+
+                <!-- Feature 3: Study Resources -->
+                <div class="feature-box">
+                    <h3>Study Resources</h3>
+                    <p>Download useful checklists, reference guides, formulas, and syllabus outlines for various courses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTACT SECTION -->
+    <!-- A simple form and contact details for student inquiries -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="contact-desc">Have questions or want to contribute your notes? Send us a message below.</p>
+            
+            <!-- Simple Contact Form -->
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write your query here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <!-- Copyright banner at the bottom of the page -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Student Notes Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
