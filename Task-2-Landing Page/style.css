@@ -1,0 +1,232 @@
+/* ==========================================
+   STUDENT NOTES PORTAL - CSS STYLE SHEET
+   ========================================== */
+
+/* 1. GLOBAL BASE STYLES */
+/* Setting basic resets for margins, paddings, and font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding is included in element width/height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;             /* Dark Gray text color for readability */
+    line-height: 1.6;           /* Standard readability line spacing */
+    background-color: #79bff8;  /* blue background */
+}
+
+/* Container to keep content centered with consistent side margins */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 2. HEADER & NAVIGATION */
+.header {
+    background-color: #f4f5f7;
+    border-bottom: 2px solid #e0e0e0; /* Gray border to separate header from content */
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Positions Logo on left, Navigation on right */
+    align-items: center;            /* Vertically centers navigation items */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;                 /* Main theme blue color */
+    text-decoration: none;          /* Removes underline from logo link */
+}
+
+.nav a {
+    color: #555555;                 /* Medium gray color for navigation links */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #0056b3;                 /* Blue hover color to indicate link */
+}
+
+/* 3. HERO SECTION */
+.hero {
+    background-color: #96aed1;      /* Light gray background color */
+    padding: 80px 0;
+    text-align: center;             /* Centers all text inside the hero section */
+}
+
+.hero-container {
+    max-width: 800px;               /* Keeps text content narrow for better reading */
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* Theme Button styling */
+.btn {
+    display: inline-block;
+    background-color: #0056b3;      /* Blue background */
+    color: #ffffff;                 /* White text */
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;             /* Rounded corners */
+}
+
+.btn:hover {
+    background-color: #004085;      /* Darker blue for hover feedback */
+}
+
+/* 4. FEATURES SECTION */
+.features {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+/* Feature grid to align the three boxes side-by-side or stack on smaller screens */
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+}
+
+/* Individual Feature Card Box styling */
+.feature-box {
+    flex: 1;                        /* Allows boxes to share space equally */
+    min-width: 280px;               /* Prevents cards from getting too squished */
+    background-color: #f8f9fa;      /* Off-white background */
+    border: 1px solid #e2e8f0;      /* Soft grey border */
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.feature-box h3 {
+    font-size: 22px;
+    color: #0056b3;                 /* Title uses theme blue */
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #666666;
+    font-size: 15px;
+}
+
+/* 5. CONTACT SECTION */
+.contact {
+    background-color: #8ab8fd;      /* Light gray background color */
+    padding: 60px 0;
+}
+
+.contact-container {
+    max-width: 600px;               /* Constrains contact form width */
+    margin: 0 auto;
+}
+
+.contact-desc {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* General spacing for form input rows */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;                 /* Pushes label to its own line above input */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;                    /* Fits full width of parent form container */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0056b3;          /* Highlights border blue when focused */
+}
+
+.submit-btn {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;                   /* Removes standard browser button border */
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;                    /* Block level button style */
+}
+
+.submit-btn:hover {
+    background-color: #004085;
+}
+
+/* 6. FOOTER SECTION */
+.footer {
+    background-color: #333333;      /* Dark gray footer background */
+    color: #ffffff;                 /* White text color */
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* 7. RESPONSIVE DESIGN BREAKPOINTS */
+/* Scales sections for mobile screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;     /* Stack Logo and Links vertically */
+        gap: 15px;
+    }
+    
+    .nav a {
+        margin: 0 10px;             /* Center navigation items */
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .features-grid {
+        flex-direction: column;     /* Stack the 3 feature boxes vertically */
+    }
+}
